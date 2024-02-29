@@ -54,7 +54,16 @@ export function Header() {
           <UserOrLogin />
         </React.Suspense>
       </div>
-      
+      <div className="flex items-center justify-end space-x-2">
+        
+        <a
+          href="https://ai-assistant-gpt-4.vercel.app/"
+          className={cn(buttonVariants())}
+        >
+          <span className="hidden sm:block">Ai Chatbot</span>
+          <span className="sm:hidden">Ai Chatbot</span>
+        </a>
+      </div>
     </header>
   )
 }
